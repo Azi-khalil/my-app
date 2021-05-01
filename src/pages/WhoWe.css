@@ -1,0 +1,35 @@
+.who-con {
+  position: absolute;
+  margin-top: 110px;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.who-item {
+  background-color: beige;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.who-desc {
+  text-align: center;
+  width: 300px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+.who-image {
+  width: 300px;
+  height: 250px;
+  margin-left: 150px;
+}
+
+.who-item2 {
+  margin-top: 10px;
+  background-color: rgb(126, 147, 192);
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}

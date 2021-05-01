@@ -1,0 +1,109 @@
+.slider {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallary-img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 70px;
+  font-size: 3rem;
+  color: black;
+  z-index: 9;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  font-size: 3rem;
+  color: black;
+  z-index: 9;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fabricMat {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fabricItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.itemText {
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+
+.desc {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: none;
+  padding: 5px;
+  font-size: larger;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fabricItem:hover .itemText {
+  display: none;
+}
+.fabricItem:hover .desc {
+  display: block;
+}
+
+@media screen and (max-width: 740px) {
+  .gallary-img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .right-arrow {
+    right: 50px;
+  }
+  .left-arrow {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallary-img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .right-arrow {
+    right: 30px;
+  }
+  .left-arrow {
+    left: 30px;
+  }
+}
